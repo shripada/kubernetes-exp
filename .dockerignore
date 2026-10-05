@@ -1,0 +1,54 @@
+# Version control and repository metadata
+.git
+.gitignore
+.gitattributes
+.github
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.kubeconfig
+kubeconfig*
+secrets/
+
+# Kubernetes and infrastructure local state
+.kube/
+.helm/
+.terraform/
+*.tfstate
+*.tfstate.*
+charts/**/charts/
+charts/**/tmpcharts/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs, caches, dependencies, and build output
+*.log
+tmp/
+temp/
+.cache/
+coverage/
+dist/
+build/
+node_modules/
+vendor/
+
+# Documentation and CI files are normally unnecessary in image contexts
+docs/
+*.md
+!README.md
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+.dockerignore

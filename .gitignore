@@ -1,0 +1,36 @@
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.kubeconfig
+kubeconfig*
+secrets/
+
+# Kubernetes and infrastructure tooling
+.kube/
+.helm/
+.terraform/
+*.tfstate
+*.tfstate.*
+charts/**/charts/
+charts/**/tmpcharts/
+
+# Generated files and local tooling
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.log
+.cache/
+coverage/
+dist/
+build/
+node_modules/
+vendor/
+tmp/
+temp/
